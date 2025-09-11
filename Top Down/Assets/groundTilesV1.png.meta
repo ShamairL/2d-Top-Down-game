@@ -5,6 +5,9 @@ TextureImporter:
   - first:
       213: 4435139510505729319
     second: groundTilesV1_0
+  - first:
+      213: 5439592223395851178
+    second: groundTilesV1_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -75,7 +78,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,7 +103,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GrassTL
+      name: Brick
       rect:
         serializedVersion: 2
         x: 16
@@ -122,7 +125,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GrassT
+      name: GrassTL
       rect:
         serializedVersion: 2
         x: 32
@@ -135,16 +138,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: cb9dca9c41ea3424e9de81c132f67dc9
-      internalID: 777490893
+      spriteID: aabac769e405d7b40800000000000000
+      internalID: 5439592223395851178
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GrassTR
+      name: GrassT
       rect:
         serializedVersion: 2
         x: 48
@@ -159,14 +162,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 06f92b6d26b8d93408825c73bb360e1f
-      internalID: 1853231849
+      spriteID: 40f5036fe817dd441a6506fd3fa1db45
+      internalID: -44517436
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BrickTL
+      name: GrassTR
       rect:
         serializedVersion: 2
         x: 64
@@ -181,14 +184,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7009d443d62e60a409ca4450ee436200
-      internalID: 911173432
+      spriteID: 71fe21ce47a91d84a896a106ca34468f
+      internalID: -1769257559
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BrickT
+      name: GrassIBR
       rect:
         serializedVersion: 2
         x: 0
@@ -203,14 +206,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fb675af6685ce36449611113cb99cac6
-      internalID: -1747208227
+      spriteID: 81922d2b399e65349b00d18442156548
+      internalID: -1486227014
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BrickTR
+      name: GrassIBL
       rect:
         serializedVersion: 2
         x: 16
@@ -225,8 +228,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5a6974c136a1eba489836a6f75bd3618
-      internalID: 1204204621
+      spriteID: 42230ba02953cbf4d8594f5c230c3064
+      internalID: 1690420629
       vertices: []
       indices: 
       edges: []
@@ -247,8 +250,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d9881c71b673bab409dd7bafefe30df7
-      internalID: -433339956
+      spriteID: e6ac640388eb54a49b69a47f6ef05daf
+      internalID: 1629739093
       vertices: []
       indices: 
       edges: []
@@ -269,8 +272,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc7851780168d76458d8fae9868c665f
-      internalID: 955445576
+      spriteID: 09e98706ee7975046a3399198ad2db88
+      internalID: 1308445352
       vertices: []
       indices: 
       edges: []
@@ -291,14 +294,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0966c841e80ac4e46a6f56e1caf271e8
-      internalID: 427190732
+      spriteID: a7821d671bb117a4c8ebb88fcdd51e26
+      internalID: -39767565
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BrickL
+      name: GrassITR
       rect:
         serializedVersion: 2
         x: 0
@@ -313,14 +316,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eef25fe32cd8bd549bb77c7299866b48
-      internalID: 749639488
+      spriteID: 53961b64b9ebcc844962b6f4514acdf2
+      internalID: -882044501
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BrickC
+      name: GrassITL
       rect:
         serializedVersion: 2
         x: 16
@@ -335,30 +338,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8634ab0307fee1e43b382f7e21265168
-      internalID: -100372995
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BrickR
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0c32bdec9a8bcfb428266ba06e65a2f0
-      internalID: 1597069325
+      spriteID: 64a00fce5aca4f74cab308c908b7b6b8
+      internalID: -522681305
       vertices: []
       indices: 
       edges: []
@@ -367,6 +348,28 @@ TextureImporter:
       name: GrassBL
       rect:
         serializedVersion: 2
+        x: 32
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43f63e6898966644ea61b3b72c538076
+      internalID: -1255499399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrassB
+      rect:
+        serializedVersion: 2
         x: 48
         y: 16
         width: 16
@@ -379,14 +382,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d001ebaa1699ed468a361611e498a42
-      internalID: -1898617246
+      spriteID: 536627ab9105e2548b3a3c4ef76a877c
+      internalID: -698761329
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GrassB
+      name: GrassBR
       rect:
         serializedVersion: 2
         x: 64
@@ -401,14 +404,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc46c1e161417bd4aa4532c7a9ded35d
-      internalID: -1964923617
+      spriteID: 14c29308f2b6fd849a7fa499e8107f02
+      internalID: -1393272647
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GrassBR
+      name: Dirt
       rect:
         serializedVersion: 2
         x: 0
@@ -423,14 +426,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8cbd2af35b4e44e4383843751ff2a6da
-      internalID: -212863677
+      spriteID: cfabd481bb0385c41812123299fdc6d6
+      internalID: 1142194971
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BrickBL
+      name: GrassWL
       rect:
         serializedVersion: 2
         x: 16
@@ -445,14 +448,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ecdcdc1c8d137764aa0afe7c9cef17d3
-      internalID: -323783547
+      spriteID: 433af937a9a8e8941b4306e35afcb9b8
+      internalID: 1202633870
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BrickB
+      name: GrassWR
       rect:
         serializedVersion: 2
         x: 32
@@ -467,52 +470,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f4a09ed277549248a87d04923513e92
-      internalID: 1114952432
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BrickBR
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: eff55e76c4cbbda42b852ee8b7a9554e
-      internalID: 1099485611
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BaseG
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0f4d24be15795d049b657fc6eaaf4cbe
-      internalID: 919294314
+      spriteID: 57a51f1e4af52eb4aaf7ab4ef15ae30b
+      internalID: -720209120
       vertices: []
       indices: 
       edges: []
@@ -521,7 +480,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 63c9ce649e82a6942bf776b37e88494a
+    spriteID: e8da89961993a65449e7fe5cd16a7428
     internalID: 0
     vertices: []
     indices: 
@@ -531,25 +490,23 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      BaseG: 919294314
-      BrickB: 1114952432
-      BrickBL: -323783547
-      BrickBR: 1099485611
-      BrickC: -100372995
-      BrickL: 749639488
-      BrickR: 1597069325
-      BrickT: -1747208227
-      BrickTL: 911173432
-      BrickTR: 1204204621
-      GrassB: -1964923617
-      GrassBL: -1898617246
-      GrassBR: -212863677
-      GrassC: 955445576
-      GrassL: -433339956
-      GrassR: 427190732
-      GrassT: 777490893
-      GrassTL: 4435139510505729319
-      GrassTR: 1853231849
+      Brick: 4435139510505729319
+      Dirt: 1142194971
+      GrassB: -698761329
+      GrassBL: -1255499399
+      GrassBR: -1393272647
+      GrassC: 1308445352
+      GrassIBL: 1690420629
+      GrassIBR: -1486227014
+      GrassITL: -522681305
+      GrassITR: -882044501
+      GrassL: 1629739093
+      GrassR: -39767565
+      GrassT: -44517436
+      GrassTL: 5439592223395851178
+      GrassTR: -1769257559
+      GrassWL: 1202633870
+      GrassWR: -720209120
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
