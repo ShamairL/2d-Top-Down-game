@@ -7,6 +7,10 @@ public class PlayerController : MonoBehaviour
 {
 
     public float moveSpeed = 5f;
+    public int maxHealth = 100;
+    public int currentHealth;
+
+    public HealthBar healthBar;
 
     Vector2 movementInput;
     Rigidbody2D rb;
@@ -15,6 +19,8 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        currentHealth = maxHealth;
+        healthBar.SetMaxHealth(maxHealth);
     }
 
     private void FixedUpdate()
@@ -26,8 +32,22 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    public void ChangeHealth(int health)
+    {
+        if (currentHealth > maxHealth)
+        {
+            currentHealth = maxHealth;
+        }
+        healthBar.SetHealth(currentHealth);
+    }
+
     void OnMove(InputValue movementValue)
     {
         movementInput = movementValue.Get<Vector2>();
+    }
+    void OnJump()
+    {
+        currentHealth -= 20;
+        ChangeHealth(currentHealth);
     }
 }
