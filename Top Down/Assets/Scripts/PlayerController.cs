@@ -3,48 +3,31 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-
 public class PlayerController : MonoBehaviour
 {
+
+    public float moveSpeed = 5f;
+
+    Vector2 movementInput;
+    Rigidbody2D rb;
+
     // Start is called before the first frame update
     void Start()
     {
-
-
+        rb = GetComponent<Rigidbody2D>();
     }
 
-
-    // Update is called once per frame
-    void Update()
+    private void FixedUpdate()
     {
-        float horizontal = 0.0f;
-        if (Keyboard.current.leftArrowKey.isPressed)
+        // If movemnt imput is not zero, move the player
+        if (movementInput != Vector2.zero)
         {
-            horizontal = -.25f;
+           rb.MovePosition(rb.position + movementInput * moveSpeed * Time.fixedDeltaTime);
         }
-        else if (Keyboard.current.rightArrowKey.isPressed)
-        {
-            horizontal = 0.25f;
-        }
-        Debug.Log(horizontal);
-
-
-        float vertical = 0.0f;
-        if (Keyboard.current.upArrowKey.isPressed)
-        {
-            vertical = .25f;
-        }
-        else if (Keyboard.current.downArrowKey.isPressed)
-        {
-            vertical = -.25f;
-        }
-        Debug.Log(vertical);
-
-
-        Vector2 position = transform.position;
-        position.x = position.x + 0.1f * horizontal;
-        position.y = position.y + 0.1f * vertical;
-        transform.position = position;
     }
 
+    void OnMove(InputValue movementValue)
+    {
+        movementInput = movementValue.Get<Vector2>();
+    }
 }
