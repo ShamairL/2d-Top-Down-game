@@ -12,13 +12,16 @@ public class PlayerController : MonoBehaviour
 
     public HealthBar healthBar;
 
-    Vector2 movementInput;
-    Rigidbody2D rb;
+    private Vector2 movementInput;
+    private Rigidbody2D rb;
+    private Animator animator;
+
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
     }
@@ -28,7 +31,12 @@ public class PlayerController : MonoBehaviour
         // If movemnt imput is not zero, move the player
         if (movementInput != Vector2.zero)
         {
-           rb.MovePosition(rb.position + movementInput * moveSpeed * Time.fixedDeltaTime);
+            rb.MovePosition(rb.position + movementInput * moveSpeed * Time.fixedDeltaTime);
+        }
+        else { 
+            animator.SetBool("isWalking", false);
+            animator.SetFloat("LastInputX", movementInput.x);
+            animator.SetFloat("LastInputY", movementInput.y);
         }
     }
 
@@ -43,7 +51,10 @@ public class PlayerController : MonoBehaviour
 
     void OnMove(InputValue movementValue)
     {
+        animator.SetBool("isWalking", true);
         movementInput = movementValue.Get<Vector2>();
+        animator.SetFloat("InputX", movementInput.x);
+        animator.SetFloat("InputY", movementInput.y);
     }
     void OnJump()
     {
