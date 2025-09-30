@@ -1,4 +1,6 @@
+using System.Collections.Generic;
 using System.IO;
+using UnityEditor.Overlays;
 using UnityEngine;
 
 public class SaveController : MonoBehaviour
@@ -40,6 +42,8 @@ public class SaveController : MonoBehaviour
             hotbarController.SetHotbarItems(saveData.hotbarSaveData);
         } else
         {
+            inventoryController.SetInventoryItems(new List<InventorySaveData>());
+            hotbarController.SetHotbarItems(new List<InventorySaveData>());
             SaveGame();
         }
     }

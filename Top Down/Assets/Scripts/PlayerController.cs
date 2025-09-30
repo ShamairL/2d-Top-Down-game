@@ -49,14 +49,14 @@ public class PlayerController : MonoBehaviour
         healthBar.SetHealth(currentHealth);
     }
 
-    void OnMove(InputValue movementValue)
+    public void OnMove(InputAction.CallbackContext movementValue)
     {
         animator.SetBool("isWalking", true);
-        movementInput = movementValue.Get<Vector2>();
+        movementInput = movementValue.ReadValue<Vector2>();
         animator.SetFloat("InputX", movementInput.x);
         animator.SetFloat("InputY", movementInput.y);
     }
-    void OnJump()
+    public void OnJump(InputAction.CallbackContext context)
     {
         currentHealth -= 20;
         ChangeHealth(currentHealth);
